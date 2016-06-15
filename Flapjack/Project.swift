@@ -10,4 +10,11 @@ import Foundation
 
 class Project {
     
+    var projectName: String
+    var files: [File]
+    
+    init(projectName: String, files: [File]) {
+        self.projectName = projectName
+        self.files = files
+    }
 }

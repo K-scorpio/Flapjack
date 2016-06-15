@@ -10,4 +10,13 @@ import Foundation
 
 class File {
     
+    var file: NSData
+    var fileName: String
+    var comments: [Comment]?
+    
+    init(file: NSData, fileName: String, comments: [Comment]) {
+        self.file = file
+        self.fileName = fileName
+        self.comments = comments
+    }
 }

@@ -10,4 +10,11 @@ import Foundation
 
 class Comment {
     
+    var comment: String
+    var file: File
+    
+    init(comment: String, file: File) {
+        self.comment = comment
+        self.file = file
+    }
 }
