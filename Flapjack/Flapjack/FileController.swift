@@ -10,4 +10,15 @@ import Foundation
 
 class FileController {
     
+    func addFileToProject() {
+        
+    }
+    
+    func removeFileFromProject() {
+        
+    }
+    
+    func updateFileName() {
+        
+    }
 }

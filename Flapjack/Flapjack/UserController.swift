@@ -10,4 +10,20 @@ import Foundation
 
 class UserController {
     
+    func addName() {
+        
+    }
+    
+    func addImage() {
+        
+    }
+    
+    func updateName() {
+        
+    }
+    
+    func updateImage() {
+        
+    }
+    
 }

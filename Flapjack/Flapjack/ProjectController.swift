@@ -10,4 +10,16 @@ import Foundation
 
 class ProjectController {
     
+    func addProject() {
+    
+    }
+    
+    func removeProject() {
+    
+    }
+    
+    func updateProjectName() {
+        
+    }
+    
 }

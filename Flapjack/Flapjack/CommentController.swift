@@ -10,4 +10,16 @@ import Foundation
 
 class CommentController {
     
+    func addCommentToFile() {
+        
+    }
+    
+    func removeCommentFromFile() {
+        
+    }
+    
+    func updateComment() {
+        
+    }
+    
 }
