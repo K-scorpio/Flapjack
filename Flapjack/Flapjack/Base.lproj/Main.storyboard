@@ -15,8 +15,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Y5U-u9-zwz" kind="relationship" relationship="viewControllers" id="Zqo-HR-Kvc"/>
                         <segue destination="KVT-4l-Vmc" kind="relationship" relationship="viewControllers" id="72N-NB-lDC"/>
+                        <segue destination="Y5U-u9-zwz" kind="relationship" relationship="viewControllers" id="Zqo-HR-Kvc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asn-ge-3um" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -39,6 +39,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Hfi-05-gVb" kind="show" identifier="toFlapjack" id="A2a-eU-ZEb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,11 +55,39 @@
             </objects>
             <point key="canvasLocation" x="1089" y="-147"/>
         </scene>
-        <!--Party Flapjacks-->
+        <!--Table View Controller-->
+        <scene sceneID="zlb-iU-bq7">
+            <objects>
+                <tableViewController id="Hfi-05-gVb" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AS7-fJ-iXX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kze-uN-efs">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kze-uN-efs" id="a46-FR-GGb">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Hfi-05-gVb" id="OTM-Ke-j5A"/>
+                            <outlet property="delegate" destination="Hfi-05-gVb" id="zlt-aH-MHF"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYb-vQ-9ug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821" y="-147"/>
+        </scene>
+        <!--Feed-->
         <scene sceneID="eHd-xg-d88">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KVT-4l-Vmc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Party Flapjacks" id="JMU-SU-iuL"/>
+                    <tabBarItem key="tabBarItem" title="Feed" id="JMU-SU-iuL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W8P-G9-0yT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -103,6 +134,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="KSd-gN-Qdd" kind="show" identifier="toMyFlapjack" id="ta3-TC-MOA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -114,15 +148,85 @@
                         <barButtonItem key="leftBarButtonItem" image="Profile" id="hE9-IP-Wb4">
                             <inset key="imageInsets" minX="-3" minY="13" maxX="26" maxY="12"/>
                             <color key="tintColor" red="0.10004382520000001" green="0.40284751079999997" blue="0.49531659030000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="6nO-tT-Fl1" kind="presentation" identifier="toProfile" id="4ge-hF-GEC"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sr6-KC-BBU">
                             <color key="tintColor" red="0.10004382520000001" green="0.40284751079999997" blue="0.49531659030000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Efk-OI-BzQ" kind="show" identifier="toNewFlapjack" id="sSu-Iv-kPQ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sfd-DA-gGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1089" y="626"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Aat-l0-jRR">
+            <objects>
+                <tableViewController id="KSd-gN-Qdd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DB1-9N-cUd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="a3G-Zv-uPZ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a3G-Zv-uPZ" id="Xyk-n6-as9">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KSd-gN-Qdd" id="v0Q-oT-jGA"/>
+                            <outlet property="delegate" destination="KSd-gN-Qdd" id="kQC-w1-Zuf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeo-9W-Udz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821" y="626"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hcN-Nh-lxd">
+            <objects>
+                <viewController id="Efk-OI-BzQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Flp-uC-I1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ei-Gx-OUs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YSu-rW-cxm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30N-m8-PkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821" y="1408"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PoB-k9-nXU">
+            <objects>
+                <viewController id="6nO-tT-Fl1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YX6-2b-Tpv"/>
+                        <viewControllerLayoutGuide type="bottom" id="vuA-Xf-bM4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OoX-aI-66r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHN-EL-nA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="1408"/>
         </scene>
         <!--My Flapjacks-->
         <scene sceneID="1T3-ee-fD3">
