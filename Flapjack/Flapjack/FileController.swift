@@ -10,6 +10,8 @@ import Foundation
 
 class FileController {
     
+    static let sharedInstance = FileController()
+    
     func addFileToProject() {
         
     }

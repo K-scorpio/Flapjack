@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2086C931D121F4F00434BF2 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2086C921D121F4F00434BF2 /* CloudKitManager.swift */; };
+		E2086C951D121F9500434BF2 /* CloudKitManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2086C941D121F9500434BF2 /* CloudKitManagedObject.swift */; };
+		E2086C971D121FB500434BF2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2086C961D121FB500434BF2 /* Stack.swift */; };
+		E2086C9A1D12225600434BF2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2086C981D12225600434BF2 /* Model.xcdatamodeld */; };
 		E2907CAF1D10979100B14328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CAE1D10979100B14328 /* AppDelegate.swift */; };
 		E2907CB41D10979100B14328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2907CB21D10979100B14328 /* Main.storyboard */; };
 		E2907CB61D10979100B14328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2907CB51D10979100B14328 /* Assets.xcassets */; };
 		E2907CB91D10979100B14328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2907CB71D10979100B14328 /* LaunchScreen.storyboard */; };
-		E2907CC11D10B43000B14328 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC01D10B43000B14328 /* File.swift */; };
-		E2907CC31D10B43900B14328 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC21D10B43900B14328 /* Project.swift */; };
-		E2907CC51D10B44100B14328 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC41D10B44100B14328 /* Comment.swift */; };
-		E2907CC81D10B46900B14328 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC71D10B46900B14328 /* User.swift */; };
+		E2907CC11D10B43000B14328 /* Filea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC01D10B43000B14328 /* Filea.swift */; };
+		E2907CC31D10B43900B14328 /* Projecta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC21D10B43900B14328 /* Projecta.swift */; };
+		E2907CC51D10B44100B14328 /* Commenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC41D10B44100B14328 /* Commenta.swift */; };
+		E2907CC81D10B46900B14328 /* Usera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC71D10B46900B14328 /* Usera.swift */; };
 		E2907CCA1D10B48200B14328 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CC91D10B48200B14328 /* FileController.swift */; };
 		E2907CCC1D10B48B00B14328 /* ProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CCB1D10B48B00B14328 /* ProjectController.swift */; };
 		E2907CCE1D10B49500B14328 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2907CCD1D10B49500B14328 /* CommentController.swift */; };
@@ -22,16 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2086C921D121F4F00434BF2 /* CloudKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudKitManager.swift; path = ../CloudKitManager.swift; sourceTree = "<group>"; };
+		E2086C941D121F9500434BF2 /* CloudKitManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudKitManagedObject.swift; path = ../CloudKitManagedObject.swift; sourceTree = "<group>"; };
+		E2086C961D121FB500434BF2 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		E2086C991D12225600434BF2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E2907CAB1D10979100B14328 /* Flapjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flapjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2907CAE1D10979100B14328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2907CB31D10979100B14328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2907CB51D10979100B14328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2907CB81D10979100B14328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2907CBA1D10979100B14328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2907CC01D10B43000B14328 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		E2907CC21D10B43900B14328 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		E2907CC41D10B44100B14328 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		E2907CC71D10B46900B14328 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E2907CC01D10B43000B14328 /* Filea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filea.swift; sourceTree = "<group>"; };
+		E2907CC21D10B43900B14328 /* Projecta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projecta.swift; sourceTree = "<group>"; };
+		E2907CC41D10B44100B14328 /* Commenta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commenta.swift; sourceTree = "<group>"; };
+		E2907CC71D10B46900B14328 /* Usera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usera.swift; sourceTree = "<group>"; };
 		E2907CC91D10B48200B14328 /* FileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
 		E2907CCB1D10B48B00B14328 /* ProjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectController.swift; sourceTree = "<group>"; };
 		E2907CCD1D10B49500B14328 /* CommentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
@@ -70,6 +78,7 @@
 			children = (
 				E2907CAE1D10979100B14328 /* AppDelegate.swift */,
 				E2907CB21D10979100B14328 /* Main.storyboard */,
+				E2086C961D121FB500434BF2 /* Stack.swift */,
 				E2907CB51D10979100B14328 /* Assets.xcassets */,
 				E2907CB71D10979100B14328 /* LaunchScreen.storyboard */,
 				E2907CBA1D10979100B14328 /* Info.plist */,
@@ -82,10 +91,11 @@
 		E2907CC61D10B44800B14328 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E2907CC71D10B46900B14328 /* User.swift */,
-				E2907CC21D10B43900B14328 /* Project.swift */,
-				E2907CC01D10B43000B14328 /* File.swift */,
-				E2907CC41D10B44100B14328 /* Comment.swift */,
+				E2907CC71D10B46900B14328 /* Usera.swift */,
+				E2907CC21D10B43900B14328 /* Projecta.swift */,
+				E2907CC01D10B43000B14328 /* Filea.swift */,
+				E2907CC41D10B44100B14328 /* Commenta.swift */,
+				E2086C981D12225600434BF2 /* Model.xcdatamodeld */,
 			);
 			name = Model;
 			path = ..;
@@ -98,6 +108,8 @@
 				E2907CCB1D10B48B00B14328 /* ProjectController.swift */,
 				E2907CC91D10B48200B14328 /* FileController.swift */,
 				E2907CCD1D10B49500B14328 /* CommentController.swift */,
+				E2086C941D121F9500434BF2 /* CloudKitManagedObject.swift */,
+				E2086C921D121F4F00434BF2 /* CloudKitManager.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -176,12 +188,16 @@
 				E2907CD01D10B49C00B14328 /* UserController.swift in Sources */,
 				E2907CAF1D10979100B14328 /* AppDelegate.swift in Sources */,
 				E2907CCE1D10B49500B14328 /* CommentController.swift in Sources */,
-				E2907CC11D10B43000B14328 /* File.swift in Sources */,
+				E2907CC11D10B43000B14328 /* Filea.swift in Sources */,
+				E2086C971D121FB500434BF2 /* Stack.swift in Sources */,
+				E2086C931D121F4F00434BF2 /* CloudKitManager.swift in Sources */,
 				E2907CCC1D10B48B00B14328 /* ProjectController.swift in Sources */,
-				E2907CC31D10B43900B14328 /* Project.swift in Sources */,
+				E2907CC31D10B43900B14328 /* Projecta.swift in Sources */,
 				E2907CCA1D10B48200B14328 /* FileController.swift in Sources */,
-				E2907CC81D10B46900B14328 /* User.swift in Sources */,
-				E2907CC51D10B44100B14328 /* Comment.swift in Sources */,
+				E2907CC81D10B46900B14328 /* Usera.swift in Sources */,
+				E2907CC51D10B44100B14328 /* Commenta.swift in Sources */,
+				E2086C9A1D12225600434BF2 /* Model.xcdatamodeld in Sources */,
+				E2086C951D121F9500434BF2 /* CloudKitManagedObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +349,23 @@
 				E2907CBF1D10979100B14328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2086C981D12225600434BF2 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2086C991D12225600434BF2 /* Model.xcdatamodel */,
+			);
+			currentVersion = E2086C991D12225600434BF2 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Flapjack/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E2907CA31D10979100B14328 /* Project object */;
 }

@@ -222,11 +222,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jry-KK-URu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Display name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jry-KK-URu">
                                 <rect key="frame" x="180" y="399" width="240" height="30"/>
                                 <color key="backgroundColor" red="0.10004382520000001" green="0.40284751079999997" blue="0.49531659030000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="jkv-hE-SvG"/>
+                                    <constraint firstAttribute="width" constant="240" id="V00-TC-GNA"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -239,28 +239,20 @@
                                     <segue destination="rAj-dE-79z" kind="embed" id="cLz-N8-bsD"/>
                                 </connections>
                             </containerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpa-ST-ddO">
-                                <rect key="frame" x="180" y="437" width="240" height="30"/>
-                                <color key="backgroundColor" red="0.10004382520000001" green="0.40284751079999997" blue="0.49531659030000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jry-KK-URu" firstAttribute="top" secondItem="W7A-XT-uGI" secondAttribute="bottom" constant="54" id="1Cp-3v-Yzl"/>
-                            <constraint firstItem="jry-KK-URu" firstAttribute="trailing" secondItem="rpa-ST-ddO" secondAttribute="trailing" id="6BG-ib-aYE"/>
-                            <constraint firstItem="vuA-Xf-bM4" firstAttribute="top" secondItem="rpa-ST-ddO" secondAttribute="bottom" constant="133" id="AI1-SL-j8x"/>
-                            <constraint firstItem="W7A-XT-uGI" firstAttribute="centerX" secondItem="OoX-aI-66r" secondAttribute="centerX" id="Evt-6S-w3b"/>
-                            <constraint firstItem="W7A-XT-uGI" firstAttribute="trailing" secondItem="jry-KK-URu" secondAttribute="trailing" id="Hoa-jy-SKf"/>
-                            <constraint firstItem="W7A-XT-uGI" firstAttribute="leading" secondItem="jry-KK-URu" secondAttribute="leading" id="SFw-eg-gDk"/>
-                            <constraint firstItem="jry-KK-URu" firstAttribute="leading" secondItem="rpa-ST-ddO" secondAttribute="leading" id="hzH-tv-M9f"/>
-                            <constraint firstItem="W7A-XT-uGI" firstAttribute="top" secondItem="YX6-2b-Tpv" secondAttribute="bottom" constant="41" id="l0R-he-JJI"/>
-                            <constraint firstItem="rpa-ST-ddO" firstAttribute="top" secondItem="jry-KK-URu" secondAttribute="bottom" constant="8" symbolic="YES" id="wcK-xf-xCe"/>
+                            <constraint firstItem="W7A-XT-uGI" firstAttribute="top" secondItem="YX6-2b-Tpv" secondAttribute="bottom" constant="41" id="5eL-K3-c3b"/>
+                            <constraint firstItem="W7A-XT-uGI" firstAttribute="trailing" secondItem="jry-KK-URu" secondAttribute="trailing" id="6U8-k6-xbe"/>
+                            <constraint firstItem="vuA-Xf-bM4" firstAttribute="top" secondItem="jry-KK-URu" secondAttribute="bottom" constant="171" id="AH3-uS-NkC"/>
+                            <constraint firstItem="W7A-XT-uGI" firstAttribute="centerX" secondItem="OoX-aI-66r" secondAttribute="centerX" id="C0l-7C-Uum"/>
+                            <constraint firstItem="W7A-XT-uGI" firstAttribute="leading" secondItem="jry-KK-URu" secondAttribute="leading" id="chf-7L-GO1"/>
+                            <constraint firstItem="jry-KK-URu" firstAttribute="top" secondItem="W7A-XT-uGI" secondAttribute="bottom" constant="54" id="msF-lV-gOy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="66F-Pg-DTa"/>
+                    <navigationItem key="navigationItem" id="66F-Pg-DTa">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="nch-o8-32g"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SHN-EL-nA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

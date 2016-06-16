@@ -7,8 +7,25 @@
 //
 
 import Foundation
+import CoreData
 
 class ProjectController {
+    
+    static let sharedInstance = ProjectController()
+    
+    let cloudKitManager: CloudKitManager
+    
+    var projects: [Project] {
+        let request = NSFetchRequest(entityName: "Post")
+        let sortDescriptor = NSSortDescriptor(key: "timestamp", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+        let results = (try? Stack.sharedStack.managedObjectContext.executeFetchRequest(request)) as? [Project] ?? []
+        return results
+    }
+    
+    init() {
+        self.cloudKitManager = CloudKitManager()
+    }
     
     func addProject() {
     

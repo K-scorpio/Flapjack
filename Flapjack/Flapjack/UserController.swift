@@ -7,23 +7,39 @@
 //
 
 import Foundation
+import UIKit
 
 class UserController {
     
-    func addName() {
-        
+    static let sharedInstance = UserController()
+    
+    var currentUser: User?
+    private let kUserData = "userData"
+    
+    init() {
+        let userDictionary = NSUserDefaults.standardUserDefaults().objectForKey(kUserData) as? [String: AnyObject] ?? [:]
+        if let cUSER = User(dictionary: userDictionary) {
+            currentUser = cUSER
+        }
     }
     
-    func addImage() {
+    func updateCurrentUser(displayName: String, profileImage: UIImage) {
         
+        guard let imageData = UIImageJPEGRepresentation(profileImage, 0.8) else {
+            return
+        }
+        
+        let filePath = getDocumentsDirectory().stringByAppendingPathComponent("profileImage.jpg")
+        imageData.writeToFile(filePath, atomically: true)
+        
+        currentUser = User(displayName: displayName, profileImageURL: filePath)
+        
+        NSUserDefaults.standardUserDefaults().setObject(currentUser?.dictionaryValue, forKey: kUserData)
     }
     
-    func updateName() {
-        
+    func getDocumentsDirectory() -> NSString {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
     }
-    
-    func updateImage() {
-        
-    }
-    
 }
